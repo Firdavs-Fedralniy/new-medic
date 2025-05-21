@@ -6,6 +6,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background-color: #04435e;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__img {
 }
@@ -19,6 +27,17 @@
 .header__link {
   color: white;
 }
+.select__lg {
+  color: white;
+  width: 70px;
+  height: 50px;
+  background-color: #114c66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
 .select__lg {
   color: white;
   width: 70px;
