@@ -10,7 +10,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "201",
     email: "doctor1@clinic.uz",
-    img: "images/doc1.png",
+    img: "/images/doc1.png",
   },
   {
     name: "Maqsudova Dilnoza Saidkamolovna",
@@ -23,7 +23,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "202",
     email: "doctor2@clinic.uz",
-    img: "images/doc2.png",
+    img: "/images/doc2.png",
   },
   {
     name: "Muslimov Ulug'bek Yakubjanovich",
@@ -36,7 +36,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "303",
     email: "doctor3@clinic.uz",
-    img: "images/doc3.png",
+    img: "/images/doc3.png",
   },
   {
     name: "Ortiqov Aziz Farixdjanovich",
@@ -49,7 +49,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "305",
     email: "doctor4@clinic.uz",
-    img: "images/doc4.png",
+    img: "/images/doc4.png",
   },
   {
     name: "Safaeva Shirinxon Furkatovna",
@@ -62,7 +62,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "207",
     email: "doctor5@clinic.uz",
-    img: "images/doc5.png",
+    img: "/images/doc5.png",
   },
   {
     name: "Magrupova Iroda Jahongirovna",
@@ -75,7 +75,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "210",
     email: "doctor6@clinic.uz",
-    img: "images/doc6.png",
+    img: "/images/doc6.png",
   },
   {
     name: "Musaeva Gulmira Vladimirovna",
@@ -88,7 +88,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "201",
     email: "doctor7@clinic.uz",
-    img: "images/doc7.png",
+    img: "/images/doc7.png",
   },
   {
     name: "Tajitdinov Ergash Yarkinovich",
@@ -101,7 +101,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "106",
     email: "doctor8@clinic.uz",
-    img: "images/doc8.png",
+    img: "/images/doc8.png",
   },
   {
     name: "Usmonova Xilolaxon Anvarovna",
@@ -114,6 +114,6 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "208",
     email: "doctor9@clinic.uz",
-    img: "images/doc9.png",
+    img: "/images/doc9.png",
   },
 ];
