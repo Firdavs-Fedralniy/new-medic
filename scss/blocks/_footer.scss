@@ -61,3 +61,15 @@
   border-radius: 10px;
   margin-top: 30px;
 }
+@media only screen and (max-width: 480px) {
+  .footer__ul{
+    flex-direction: column;
+  }
+  
+  .footer__li{
+    margin-top: 70px;
+  }
+  .footer{
+    padding-top:0px;
+  }
+}

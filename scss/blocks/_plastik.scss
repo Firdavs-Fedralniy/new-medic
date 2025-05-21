@@ -48,3 +48,11 @@
 .doctor__img {
   width: 110px;
 }
+@media only screen and (max-width: 480px) {
+  .plastik__img{
+    max-width: 340px;
+    max-height: 200px;
+  }
+  
+  
+}

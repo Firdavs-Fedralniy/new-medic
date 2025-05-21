@@ -43,3 +43,46 @@ vertical-align: middle;
 color: #04243D;
 text-align: center;
 }
+.xizmatlar__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.xizmatlar__name {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #04243D;
+
+}
+.xizmatlar__price {
+    font-weight: 700;
+    margin-top: 10px;
+    font-family: Roboto;
+padding-bottom: 10px;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000000;
+text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    .xizmatlar__wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+    .xizmatlar__card{
+        max-width: 400px;
+    }
+    .xizmatlar__img{
+        max-width: 400px;
+    }
+    .doctors__btn{
+        display: none;
+    }
+    
+  }
