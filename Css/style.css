@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 .container {
@@ -248,4 +249,253 @@ li {
 
 .section-3_content {
   border-radius: 20px;
+}
+
+.header {
+  background-color: #04435e;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__link {
+  color: white;
+}
+
+.select__lg {
+  color: white;
+  width: 70px;
+  height: 50px;
+  background-color: #114c66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.hero {
+  background-image: url(/img/3dff7b37622ef99a63eb95f6176fa90d20b2497c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+
+.hero__title {
+  padding-top: 175px;
+  color: white;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hero__text {
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.plastik {
+  margin-top: 100px;
+}
+
+.plastik__img {
+  width: 1272px;
+  height: 715px;
+  border-radius: 20px;
+}
+
+.plastik__info {
+  margin-top: 30px;
+}
+
+.plastik__title {
+  color: #04243d;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.plastik__menu {
+  margin-top: 30px;
+}
+
+.plastik__list {
+  margin-top: 40px;
+}
+
+.plastik__list__title {
+  color: #04243d;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.plastik__list__text {
+  margin-top: 10px;
+  color: #718492;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.doctor__img {
+  width: 110px;
+}
+
+.doctors__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doctors__title {
+  color: #04435e;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 79.2px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.border {
+  border-bottom: 5px solid #04435e;
+}
+
+.doctors__btn {
+  padding: 10px 40px;
+  background-color: #04435e;
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+
+.doctors__info {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.doctor__card {
+  width: 267.8800048828px;
+  height: 270.6799926758px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 10px;
+}
+
+.doctor__img {
+  margin-top: 10px;
+  width: 267.8800048828px;
+  height: 150.6799926758px;
+}
+
+.doctor__name {
+  color: #04243d;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.doctor__kind {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #04243d;
+}
+
+.footer {
+  background-color: #04435e;
+  padding-top: 100px;
+  margin-top: 60px;
+  background-image: url(img/4835b561cb1cad1de0180f3a4b3b22d96e147a7d\(1\));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__list {
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26.4px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #b4c7cf;
+}
+
+.footer__ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.footer__list__input {
+  margin-top: 30px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26.4px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.xabar {
+  padding-bottom: 50px;
+}
+
+.footer__btn {
+  padding: 10px 25px;
+  background-color: white;
+  color: #04435e;
+  border-radius: 10px;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
