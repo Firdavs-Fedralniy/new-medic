@@ -1,5 +1,11 @@
 let aWrapp = document.querySelector(".aa_wrapper");
 let gWrapp = document.querySelector(".gg_wrapper");
+let elBtn = document.querySelector(".modalniy");
+let elWrapp = document.querySelector(".modal");
+let Name = document.querySelector("#inp__name");
+let tel = document.querySelector("#inp__tel");
+let laz = document.querySelector("#inp__lavoz");
+
 let params = new URLSearchParams(window.location.search);
 let id = params.get("id");
 let find = doctors.find((el) => el.id === id);
@@ -101,3 +107,46 @@ aWrapp.insertAdjacentHTML(
                 
               </div>
         `);
+
+
+        function Modal() {
+
+          elBtn.disabled = true;
+
+          Name.addEventListener("input", () => {
+            if (
+              Name.value.trim().length === 0 &&
+            tel.value.trim().length === 0 &&
+              laz.value.trim().length === 0
+            ) {
+              elBtn.disabled = true;
+            } else {
+              elBtn.disabled = false;
+            }
+          });
+          
+          elBtn.addEventListener("click", function () {
+            elWrapp.classList.add("active"); // Показать модал
+            elWrapp.innerHTML = `
+              <div class="modal__wrapper">
+                <button class="btn__modaal">X</button>
+                <p class="text">Rahmat yuborganis uchun ${Name.value}</p>
+              </div>
+            `;
+
+            let elRemove = document.querySelector(".btn__modaal");
+            elRemove.addEventListener("click", function () {
+              elWrapp.classList.remove("active"); // Скрыть модал
+              elWrapp.innerHTML = ""; // Очистить содержимое
+            });
+          });
+
+
+        }
+        
+
+       
+
+        Modal()
+
+        
