@@ -133,6 +133,14 @@ li {
   vertical-align: middle;
 }
 
+.scroll {
+  overflow-x: scroll;
+}
+
+.shikofga {
+  color: white;
+}
+
 .plastik {
   margin-top: 100px;
 }
@@ -141,7 +149,7 @@ li {
   width: 1272px;
   height: 715px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 5px black;
+  box-shadow: 0px 0px 10px 5px gray;
 }
 
 .plastik__info {
@@ -273,7 +281,7 @@ li {
 
 @media only screen and (max-width: 480px) {
   .doctors__title {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .footer {
@@ -626,16 +634,16 @@ li {
 }
 
 .nimadi_wrapper {
-  box-shadow: 0px 0px 15px 2px black;
+  box-shadow: 0px 0px 15px 2px gray;
 }
 
 .section_content {
-  box-shadow: 0px 0px 15px 2px black;
+  box-shadow: 0px 0px 10px 2px gray;
   padding: 10px;
 }
 
 .section-3_content {
-  box-shadow: 0px 0px 15px 2px black;
+  box-shadow: 0px 0px 15px 2px gray;
   text-align: center;
   padding: 10px;
 }
@@ -645,14 +653,14 @@ li {
 }
 
 .section_5_content {
-  box-shadow: 0px 0px 15px 2px black;
+  box-shadow: 0px 0px 15px 2px gray;
   padding: 10px;
   border-radius: 20px;
   margin-left: -20px;
 }
 
 .bola {
-  box-shadow: 0px 0px 15px 2px black;
+  box-shadow: 0px 0px 15px 2px gray;
   padding: 10px;
   border-radius: 10px;
 }
@@ -691,22 +699,21 @@ li {
   margin-bottom: 40px;
 }
 
-.borderre {
-  border: 1px solid gray;
-  border-radius: 30px;
-  max-width: 500px;
-}
-
 .nigetta {
-  margin-left: 340px;
+  margin-left: 300px;
 }
 
 .itemitem {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  border-top: 1px solid #000;
 }
 
 .aa_wrapper {
-  box-shadow: 0px 0px 30px 2px black;
+  box-shadow: 0px 0px 30px 2px gray;
   padding: 30px;
   border-radius: 20px;
 }
@@ -753,7 +760,7 @@ li {
 }
 
 .gg_wrapper {
-  box-shadow: 0px 0px 30px 2px black;
+  box-shadow: 0px 0px 30px 2px gray;
   padding: 30px;
   border-radius: 20px;
 }
@@ -788,7 +795,7 @@ li {
 }
 
 .yy_wrapper {
-  box-shadow: 0px 0px 30px 2px black;
+  box-shadow: 0px 0px 30px 2px gray;
   padding: 20px 100px;
   border-radius: 20px;
   max-width: 600px;
@@ -801,6 +808,171 @@ li {
 
 .cpla_content {
   margin-top: 150px;
+}
+
+.section_wrapper {
+  overflow-x: scroll;
+}
+
+.section_5_wrapper {
+  overflow-x: scroll;
+  gap: 60px;
+}
+
+.section-3_wrapper {
+  overflow-x: scroll;
+  gap: 30px;
+}
+
+.fedya {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .header_2_ul {
+    display: none;
+  }
+  .hero_wrapper {
+    display: inline;
+  }
+  .niga_ing {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .nimadi_wrapper {
+    display: inline;
+    max-width: 400px;
+    max-height: 800px;
+    box-shadow: none;
+  }
+  .nimadi {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  .nimadi_content {
+    margin-top: 50px;
+    box-shadow: 0px 0px 30px 2px gray;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  .nitter {
+    display: none;
+  }
+  .section-2_wrapper {
+    display: inline;
+  }
+  .hehe {
+    font-size: 40px;
+    max-width: 400px;
+  }
+  .okkk {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 100px;
+  }
+  .niggette {
+    display: inline;
+  }
+  .bola {
+    margin-top: 30px;
+  }
+  .okkk {
+    max-width: 380px;
+  }
+  .niga_ing {
+    max-width: 380px;
+  }
+  .h-2 {
+    font-size: 30px;
+  }
+  .footer__ul {
+    flex-direction: column;
+  }
+  .footer__li {
+    margin-top: 70px;
+  }
+  .footer {
+    padding-top: 0px;
+  }
+  .boxxx {
+    display: inline;
+  }
+  .gg_wrapper {
+    margin-top: 100px;
+    padding: 20px;
+  }
+  .fedya {
+    max-width: 360px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    background-position: center;
+  }
+  .yy {
+    margin-left: -390px;
+  }
+  .footer__bt {
+    margin-left: 50px;
+  }
+  .aa_content {
+    margin-left: -10px;
+  }
+}
+.form-group {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.icon-input {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+}
+
+.icon-input img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.icon-input input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.service-select label {
+  color: #888;
+  font-size: 16px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #aaa;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.dropdown span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.dropdown img {
+  width: 20px;
+  height: 20px;
+}
+
+.yy_wrapper {
+  box-shadow: 0px 0px 30px 2px gray;
+  padding: 20px 100px;
+  border-radius: 20px;
 }
 
 .xizmatlar {

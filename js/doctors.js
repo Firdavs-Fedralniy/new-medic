@@ -1,5 +1,6 @@
 const doctors = [
   {
+    id: "1",
     name: "Nargiza Farhadovna Allambergenova",
     lavozimi: "Kosmetolog",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -13,6 +14,7 @@ const doctors = [
     img: "/images/doc1.png",
   },
   {
+    id: "2",
     name: "Maqsudova Dilnoza Saidkamolovna",
     lavozimi: "Estetik ginekolog",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -26,6 +28,7 @@ const doctors = [
     img: "/images/doc2.png",
   },
   {
+    id: "3",
     name: "Muslimov Ulug'bek Yakubjanovich",
     lavozimi: "Plastik jarroh",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -39,6 +42,7 @@ const doctors = [
     img: "/images/doc3.png",
   },
   {
+    id: "4",
     name: "Ortiqov Aziz Farixdjanovich",
     lavozimi: "Dermatolog",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -52,6 +56,7 @@ const doctors = [
     img: "/images/doc4.png",
   },
   {
+    id: "5",
     name: "Safaeva Shirinxon Furkatovna",
     lavozimi: "Ginekolog",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -65,6 +70,7 @@ const doctors = [
     img: "/images/doc5.png",
   },
   {
+    id: "6",
     name: "Magrupova Iroda Jahongirovna",
     lavozimi: "Dermatokosmetolog",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -78,6 +84,7 @@ const doctors = [
     img: "/images/doc6.png",
   },
   {
+    id: "7",
     name: "Musaeva Gulmira Vladimirovna",
     lavozimi: "Kosmetolog",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -91,6 +98,7 @@ const doctors = [
     img: "/images/doc7.png",
   },
   {
+    id: "8",
     name: "Tajitdinov Ergash Yarkinovich",
     lavozimi: "UZD shifokori",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
@@ -104,6 +112,7 @@ const doctors = [
     img: "/images/doc8.png",
   },
   {
+    id: "9",
     name: "Usmonova Xilolaxon Anvarovna",
     lavozimi: "Ginekolog",
     ish_kunlari: "Dushanba - Jumaa, 09:00 - 17:00",
