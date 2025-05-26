@@ -1,10 +1,5 @@
 let aWrapp = document.querySelector(".aa_wrapper");
 let gWrapp = document.querySelector(".gg_wrapper");
-let elBtn = document.querySelector(".modalniy");
-let elWrapp = document.querySelector(".modal");
-let Name = document.querySelector("#inp__name");
-let tel = document.querySelector("#inp__tel");
-let laz = document.querySelector("#inp__lavoz");
 
 let params = new URLSearchParams(window.location.search);
 let id = params.get("id");
@@ -108,7 +103,13 @@ aWrapp.insertAdjacentHTML(
               </div>
         `);
 
-
+        let elBtn = document.querySelector(".modalniy");
+        let elWrapp = document.querySelector(".modal");
+        let Name = document.querySelector("#inp__name");
+        let tel = document.querySelector("#inp__tel");
+        let laz = document.querySelector("#inp__lavoz");
+        let burger = document.querySelector(".bi-list");
+        
         function Modal() {
 
           elBtn.disabled = true;

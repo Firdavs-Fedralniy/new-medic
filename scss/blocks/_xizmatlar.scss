@@ -70,19 +70,21 @@ vertical-align: middle;
 color: #000000;
 text-align: center;
 }
+
 @media only screen and (max-width: 480px) {
     .xizmatlar__wrapper{
       display: flex;
       flex-direction: column;
     }
     .xizmatlar__card{
-        max-width: 400px;
+        max-width: 380px;
     }
     .xizmatlar__img{
-        max-width: 400px;
+        max-width: 380px;
     }
     .doctors__btn{
         display: none;
     }
+  
     
   }

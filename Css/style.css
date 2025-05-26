@@ -73,6 +73,77 @@ li {
   display: none;
 }
 
+.block,
+.bur__menu {
+  display: none;
+}
+
+.block.active {
+  display: block;
+  background-color: #063050;
+  width: 225px;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.animation {
+  animation: menu 1.3s ease-out 0s 1 forwards;
+}
+
+.reverse {
+  animation: menu 1.3s ease-out 0s 1 reverse;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.bur__menu.active {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  width: 150px;
+  height: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.bur__a {
+  color: white;
+  line-height: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.ips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  right: 0%;
+}
+
 @media only screen and (max-width: 480px) {
   .header_2_ul {
     display: none;
@@ -81,6 +152,8 @@ li {
     display: block;
     font-size: 35px;
     color: white;
+    position: relative;
+    z-index: 0;
   }
 }
 .hero {
@@ -348,6 +421,18 @@ li {
   margin-top: 30px;
 }
 
+.footer__inp {
+  background: transparent;
+  border: none;
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.footer__inp:focus {
+  border: none;
+}
+
 @media only screen and (max-width: 480px) {
   .footer__ul {
     flex-direction: column;
@@ -419,6 +504,20 @@ li {
 .hero {
   background-color: #04243d;
   padding: 200px 0px;
+}
+
+.header_2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0a2942; /* или ваш цвет */
+  z-index: 1000;
+  height: 130px; /* Вы можете подставить нужную вам высоту */
+}
+
+.main {
+  padding-top: 130px;
 }
 
 .hero_wrapper {
@@ -900,6 +999,10 @@ li {
   margin-top: 40px;
 }
 
+.a {
+  text-decoration: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -923,6 +1026,11 @@ li {
   .niga_ing {
     max-width: 400px;
     max-height: 400px;
+  }
+  .bi-list {
+    display: block;
+    font-size: 35px;
+    color: white;
   }
   .nimadi_wrapper {
     display: inline;
@@ -1145,10 +1253,10 @@ li {
     flex-direction: column;
   }
   .xizmatlar__card {
-    max-width: 400px;
+    max-width: 380px;
   }
   .xizmatlar__img {
-    max-width: 400px;
+    max-width: 380px;
   }
   .doctors__btn {
     display: none;
@@ -1167,4 +1275,13 @@ li {
 
 .neww {
   margin-left: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  .royhat__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

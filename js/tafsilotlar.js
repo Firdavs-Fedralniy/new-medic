@@ -3,6 +3,7 @@ let id = params.get("id");
 let find = services.find((el) => el.id === id);
 console.log(find);
 let plasWrap = document.querySelector(".plastik__wrap")
+let docZanZanWrapper = document.querySelector(".doctors__info");
 
 
 
@@ -34,3 +35,25 @@ function xizmIsla(){
 }
 
 xizmIsla()
+
+
+function doctorRoyhaatt() {
+  let i = 0;
+  while (i < 6) {
+    docZanZanWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
+             <a href="./niger.html?id=${doctors[i].id}">
+             <div class="doctor__card">
+                          <img src="${doctors[i].img}" alt="" class="doctor__img">
+                          <h2 class="doctor__name">${doctors[i].name}
+                              <p class="doctor__kind">${doctors[i].lavozimi}</p>
+                      </div>
+  </a>
+  
+              `
+    );
+    i++;
+  }
+}
+doctorRoyhaatt();

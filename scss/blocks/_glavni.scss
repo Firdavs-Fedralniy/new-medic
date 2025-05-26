@@ -58,6 +58,18 @@ li {
   background-color: #04243d;
   padding: 200px 0px;
 }
+.header_2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0a2942; /* или ваш цвет */
+  z-index: 1000;
+  height: 130px; /* Вы можете подставить нужную вам высоту */
+}
+.main{
+  padding-top: 130px;
+}
 .hero_wrapper {
   display: flex;
   align-items: center;
@@ -468,7 +480,9 @@ li {
   color: #333;
   margin-top: 40px;
 }
-
+.a{
+  text-decoration: none;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -494,6 +508,11 @@ li {
   .niga_ing {
     max-width: 400px;
     max-height: 400px;
+  }
+  .bi-list{
+    display: block;
+    font-size: 35px;
+    color: white;
   }
   .nimadi_wrapper {
     display: inline;

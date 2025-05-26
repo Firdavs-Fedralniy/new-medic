@@ -1,6 +1,47 @@
 
 let secDocWrapperv = document.querySelector(".section-3_wrapper");
 let firstXizmWrapper = document.querySelector(".section_wrapper");
+const burgerIcon = document.querySelector(".bi-list");
+const block = document.querySelector(".block");
+const menu = document.querySelector(".bur__menu");
+let Elbura = document.querySelector(".bur__a")
+// let bur = document.querySelector(".bur")
+
+burgerIcon.addEventListener("click", function () {
+  // Показать меню и скрыть иконку
+  block.classList.add("active","animation");
+
+  menu.classList.add("active","animation");
+  burgerIcon.classList.add("hidden");
+  let ochir = document.querySelector(".ips");
+  ochir.addEventListener("click", function () {
+  
+    block.classList.remove("active")
+    menu.classList.remove("active");
+    burgerIcon.classList.remove("hidden");
+  });
+  
+});
+
+
+document.querySelectorAll(".bur__a").forEach((link) => {
+  link.addEventListener("click", () => {
+    block.classList.remove("active");
+    menu.classList.remove("active");
+    burgerIcon.classList.remove("hidden");
+  });
+});
+
+// Закрытие при ресайзе
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 480) {
+    block.classList.remove("active");
+    menu.classList.remove("active");
+    burgerIcon.classList.remove("hidden");
+  }
+});
+
+
 
 function xizmatRoyhat(){
   let i = 0
@@ -45,6 +86,8 @@ function doctorRoyhaat() {
   }
 }
 doctorRoyhaat();
+
+
 
 
 
