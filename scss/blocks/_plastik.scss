@@ -8,6 +8,7 @@
   height: 715px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 5px gray;
+  margin-left: 65px;
 }
 
 .plastik__info {
@@ -51,10 +52,7 @@
 .non{
   display: none;
 }
-.selsi{
-  width: 20px;
-  height: 20px;
-}
+
 @media only screen and (max-width: 480px) {
   .plastik__img{
     max-width: 340px;
@@ -62,4 +60,39 @@
   }
   
   
+}
+
+
+.carusel {
+  position: relative;
+}
+.old {
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  padding: 20px 20px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: -21%;
+cursor: pointer;
+}
+.idd {
+}
+.plastik__img {
+  position: relative;
+  z-index: 1;
+}
+.next {
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  padding: 20px 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  top: 51%;
+  z-index: 2;
+  cursor: pointer;
 }

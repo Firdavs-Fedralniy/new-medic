@@ -1,15 +1,68 @@
 let params = new URLSearchParams(window.location.search);
 let id = params.get("id");
 let find = services.find((el) => el.id === id);
-console.log(find);
+let link = document.querySelector(".idd")
 let plasWrap = document.querySelector(".plastik__wrap")
 let docZanZanWrapper = document.querySelector(".doctors__info");
-let eselsi = document.querySelector(".selsi")
+let eselsi = document.querySelector(".carusel")
+let next = document.querySelector(".next")
+let img = document.querySelector(".plastik__img")
+let old = document.querySelector(".old")
 
+function doctorRoyhaatt() {
+  let i = 0;
+  while (i < 6) {
+    docZanZanWrapper.insertAdjacentHTML(
+      "beforeend",
+      `
+               <a href="./niger.html?id=${doctors[i].id}">
+               <div class="doctor__card">
+                            <img src="${doctors[i].img}" alt="" class="doctor__img">
+                            <h2 class="doctor__name">${doctors[i].name}
+                                <p class="doctor__kind">${doctors[i].lavozimi}</p>
+                        </div>
+    </a>
+    
+                `
+    );
+    i++;
+  }
+}
+doctorRoyhaatt();
+let ia = 0;
+
+function newImg(){
+    next.addEventListener("click",function(){
+        
+        ia++;
+        if(ia == services.length){
+            ia = 0
+        }
+            img.setAttribute("src", `${services[ia].img}`)
+            link.setAttribute("href", `./tafsilot.html?id=${ia+1}`);
+          
+        
+    })
+    old.addEventListener("click", function () {
+      ia--;
+      if (ia < 0) {
+        ia = services.length;
+      }
+      img.setAttribute("src", `${services[ia].img}`);
+      link.setAttribute("href", `./tafsilot.html?id=${ia + 1}`);
+    });
+}
+newImg()
+
+function base(){
+if (!find.id == 0){
+eselsi.classList.add("non")
+}
+}
+base()
 
 function xizmIsla(){
-    eselsi.classList.add("non")
-    console.log(eselsi.classList);
+    
     
     
     plasWrap.insertAdjacentHTML(
@@ -41,23 +94,3 @@ function xizmIsla(){
 xizmIsla()
 
 
-function doctorRoyhaatt() {
-  let i = 0;
-  while (i < 6) {
-    docZanZanWrapper.insertAdjacentHTML(
-      "beforeend",
-      `
-             <a href="./niger.html?id=${doctors[i].id}">
-             <div class="doctor__card">
-                          <img src="${doctors[i].img}" alt="" class="doctor__img">
-                          <h2 class="doctor__name">${doctors[i].name}
-                              <p class="doctor__kind">${doctors[i].lavozimi}</p>
-                      </div>
-  </a>
-  
-              `
-    );
-    i++;
-  }
-}
-doctorRoyhaatt();
