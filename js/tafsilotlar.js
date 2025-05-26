@@ -4,10 +4,14 @@ let find = services.find((el) => el.id === id);
 console.log(find);
 let plasWrap = document.querySelector(".plastik__wrap")
 let docZanZanWrapper = document.querySelector(".doctors__info");
-
+let eselsi = document.querySelector(".selsi")
 
 
 function xizmIsla(){
+    eselsi.classList.add("non")
+    console.log(eselsi.classList);
+    
+    
     plasWrap.insertAdjacentHTML(
       "beforeend",
       `
