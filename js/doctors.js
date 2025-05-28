@@ -39,7 +39,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "303",
     email: "doctor3@clinic.uz",
-    img: "/images/doc3.png",
+    img: "/images/doc7.png",
   },
   {
     id: "4",
@@ -95,7 +95,7 @@ const doctors = [
     tajriba: "10 yillik ish tajribasiga ega.",
     xonasi: "201",
     email: "doctor7@clinic.uz",
-    img: "/images/doc7.png",
+    img: "/images/doc3.png",
   },
   {
     id: "8",
