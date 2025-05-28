@@ -264,7 +264,8 @@ li {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  vertical-align: middle;
+  position: relative;
+  z-index: 1;
 }
 
 .doctor__img {
@@ -275,12 +276,6 @@ li {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
-  .plastik__img {
-    max-width: 340px;
-    max-height: 200px;
-  }
-}
 .carusel {
   position: relative;
 }
@@ -298,11 +293,6 @@ li {
   cursor: pointer;
 }
 
-.plastik__img {
-  position: relative;
-  z-index: 1;
-}
-
 .next {
   background-color: white;
   color: black;
@@ -316,6 +306,53 @@ li {
   cursor: pointer;
 }
 
+.old2 {
+  display: none;
+}
+
+.next2 {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .plastik__img {
+    max-width: 340px;
+    max-height: 200px;
+    margin-left: 20px;
+  }
+  .old {
+    display: none;
+  }
+  .next {
+    display: none;
+  }
+  .old2 {
+    display: block;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    padding: 10px 10px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .next2 {
+    display: block;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    padding: 10px 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 6%;
+    top: 40%;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
 .doctors__nav {
   display: flex;
   align-items: center;
@@ -1152,6 +1189,11 @@ li {
   }
   .aa_content {
     margin-left: -10px;
+  }
+  .ind__video {
+    max-width: 380px;
+    height: 280px;
+    margin-top: 30px;
   }
 }
 .form-group {

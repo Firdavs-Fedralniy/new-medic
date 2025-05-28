@@ -44,7 +44,9 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-  vertical-align: middle;
+ 
+  position: relative;
+  z-index: 1;
 }
 .doctor__img {
   width: 110px;
@@ -52,20 +54,10 @@
 .non{
   display: none;
 }
-
-@media only screen and (max-width: 480px) {
-  .plastik__img{
-    max-width: 340px;
-    max-height: 200px;
-  }
-  
-  
-}
-
-
 .carusel {
   position: relative;
 }
+
 .old {
   background-color: white;
   color: black;
@@ -80,10 +72,7 @@ cursor: pointer;
 }
 .idd {
 }
-.plastik__img {
-  position: relative;
-  z-index: 1;
-}
+
 .next {
   background-color: white;
   color: black;
@@ -96,3 +85,58 @@ cursor: pointer;
   z-index: 2;
   cursor: pointer;
 }
+
+.old2{
+  display: none;
+}
+.next2{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .plastik__img{
+    max-width: 340px;
+    max-height: 200px;
+  margin-left: 20px;
+  }
+  .old {
+   display: none;
+  }
+  .next {
+   display: none;
+  }
+  .old2{
+    display: block;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    padding: 10px 10px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 4%;
+  cursor: pointer;
+
+  }
+  .next2{
+    display: block;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    padding: 10px 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 6%;
+    top: 40%;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+
+
+
+  
+  
+  
