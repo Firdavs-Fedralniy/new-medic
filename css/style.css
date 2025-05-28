@@ -306,14 +306,6 @@ li {
   cursor: pointer;
 }
 
-.old2 {
-  display: none;
-}
-
-.next2 {
-  display: none;
-}
-
 @media only screen and (max-width: 480px) {
   .plastik__img {
     max-width: 340px;
@@ -321,13 +313,6 @@ li {
     margin-left: 20px;
   }
   .old {
-    display: none;
-  }
-  .next {
-    display: none;
-  }
-  .old2 {
-    display: block;
     background-color: white;
     color: black;
     border: 1px black solid;
@@ -336,10 +321,10 @@ li {
     position: absolute;
     z-index: 2;
     top: 40%;
-    left: 4%;
+    left: -88%;
     cursor: pointer;
   }
-  .next2 {
+  .next {
     display: block;
     background-color: white;
     color: black;
@@ -347,7 +332,7 @@ li {
     padding: 10px 10px;
     border-radius: 50%;
     position: absolute;
-    right: 6%;
+    right: 10%;
     top: 40%;
     z-index: 2;
     cursor: pointer;
